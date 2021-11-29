@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Test Calculator 3</h1>
-
-    <div id="NumberBox-One">
-        <input type="text" placeholder="0" id="Number-One">
+    <h1>Phil's Calculator 3</h1>
+    <div id="Results">
+        <div id="Results-Bubble">0</div>
     </div>
 
-    <div id="NumberBox-Two">
-        <input type="text"  placeholder="0" id="Number-Two">
+    <div id="Number-Multipliers">
+        <div id="Number-Multipliers-Inner">
+            <input id="Input-One" type="text" placeholder="0">
+                <div id="Multipliers">
+                    <Button id="Add-Button">+</Button>
+                    <button id="Subtract-Button">-</button>
+                    <button id="Multiply-Button">*</button>
+                    <button id="Divide-Button">/</button>
+                </div>
+            <input id="Input-Two" type="text" placeholder="0">
+        </div>
     </div>
-
-    <div id="Result-Number">0</div>
-
-    <button id="Add">+</button>
-
-    <button id="Subtract">-</button>
-
-    <button id="Multiply">*</button>
-    
-    <button id="Divide">/</button>
 
 </body>
 <script src="base.js"></script>

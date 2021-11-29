@@ -1,23 +1,22 @@
-let Add = document.querySelector("#Add")
-let Subtract = document.querySelector("#Subtract")
-let Multiply = document.querySelector("#Multiply")
-let Divide = document.querySelector("#Divide")
-let ResultNumber =  document.querySelector("#Result-Number")
-let NumberOne = document.querySelector("#Number-One")
-let NumberTwo = document.querySelector("#Number-Two")
+let ResultsBubble = document.querySelector("#Results-Bubble")
+let InputOne = document.querySelector("#Input-One")
+let InputTwo = document.querySelector("#Input-Two")
+let AddButton = document.querySelector("#Add-Button")
+let SubtractButton = document.querySelector("#Subtract-Button")
+let MultiplyButton = document.querySelector("#Multiply-Button")
+let DivideButton = document.querySelector("#Divide-Button")
 
-Add.addEventListener("click", function(){
-    ResultNumber.innerHTML = (Number(NumberOne.value)) + (Number(NumberTwo.value))
+AddButton.addEventListener("click", function() {
+ResultsBubble.innerHTML = Number(InputOne.value) + Number(InputTwo.value)
 })
 
-Subtract.addEventListener("click", function(){
-    ResultNumber.innerHTML = (Number(NumberOne.value)) - (Number(NumberTwo.value))
+SubtractButton.addEventListener("click", function() {
+    ResultsBubble.innerHTML = Number(InputOne.value) - Number(InputTwo.value)
 })
 
-Multiply.addEventListener("click", function(){
-    ResultNumber.innerHTML = (Number(NumberOne.value)) * (Number(NumberTwo.value))
-})
+MultiplyButton.addEventListener("click", function() {
+    ResultsBubble.innerHTML = Number(InputOne.value) * Number(InputTwo.value)})
 
-Divide.addEventListener("click", function(){
-    ResultNumber.innerHTML = (Number(NumberOne.value)) / (Number(NumberTwo.value))
+DivideButton.addEventListener("click", function() {
+    ResultsBubble.innerHTML = Number(InputOne.value) / Number(InputTwo.value)
 })
